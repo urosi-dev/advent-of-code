@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-export type Solution = { p1: number; p2: number };
+export type Solution = { p1: number | string; p2: number | string };
 
 const modules: {
   [day: string]: (file: string) => Solution;
