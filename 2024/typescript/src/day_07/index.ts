@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 function cartesian(chars: string, length = chars.length) {
   let results = [""];

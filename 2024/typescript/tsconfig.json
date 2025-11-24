@@ -4,9 +4,12 @@
     "outDir": "./dist",
     "target": "esnext",
     "rootDir": "./src/",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "esModuleInterop": true
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

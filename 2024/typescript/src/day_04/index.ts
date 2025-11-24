@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 // y, x
 const dir = [

@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 type OneDimSolution = { a: number; b: number }[];
 type TwoDimSolution =

@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 function blink(counts: Map<string, number>): Map<string, number> {
   const newCounts = new Map<string, number>();

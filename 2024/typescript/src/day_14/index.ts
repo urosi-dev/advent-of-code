@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 function mod(a: number, n: number) {
   return ((a % n) + n) % n;

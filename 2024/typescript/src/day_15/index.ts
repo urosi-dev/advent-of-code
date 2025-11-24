@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 const directions = new Map([
   ["^", [-1, 0]],

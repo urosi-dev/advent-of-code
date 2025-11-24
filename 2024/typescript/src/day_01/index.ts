@@ -1,4 +1,4 @@
-import { Solution } from "../index.js";
+import { Solution } from "@/index";
 
 function main(f: string): Solution {
   const file = f.split(/\r?\n/);
