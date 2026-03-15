@@ -1,0 +1,12 @@
+{
+    "name": "uross-11/advent-of-code",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "aoc": "./bin/run.php"
+    },
+    "require": {}
+}
