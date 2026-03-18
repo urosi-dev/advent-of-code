@@ -12,7 +12,7 @@ function solve(string $input): Solution
     foreach (array_filter(explode(",", $input)) as $range) {
         [$first, $last] = explode("-", $range);
 
-        for ($i=$first; $i <= $last; $i++) {
+        for ($i = $first; $i  <= $last; $i ++) {
             $len = strlen($i);
             $half = ceil($len / 2);
 
@@ -21,6 +21,22 @@ function solve(string $input): Solution
 
             if ($first_half === $second_half) {
                 $p1 += (int)$i;
+            }
+
+            // p2
+            // loop 1-half
+            // see if token repeats till end
+
+            for ($j = 1; $j <= $len / 2; $j++) {
+                if ($len % $j !== 0) continue;
+
+                $pattern = substr($i, 0, $j);
+                $repeat = str_repeat($pattern, intdiv($len, $j));
+
+                if ((int)$i === (int)$repeat) {
+                    $p2 += (int)$i;
+                    break;
+                }
             }
         }
     }
