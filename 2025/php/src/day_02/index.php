@@ -23,10 +23,6 @@ function solve(string $input): Solution
                 $p1 += (int)$i;
             }
 
-            // p2
-            // loop 1-half
-            // see if token repeats till end
-
             for ($j = 1; $j <= $len / 2; $j++) {
                 if ($len % $j !== 0) continue;
 
